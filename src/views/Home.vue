@@ -152,12 +152,12 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem; /* Espacio entre los campos */
+  gap: 0.8rem; 
 }
 
 label {
   font-weight: bold;
-  color: #003366; /* Color coherente con la estética */
+  color: #003366; 
 }
 
 input,
@@ -165,30 +165,30 @@ textarea {
   width: 95%;
   padding: 0.6rem;
   border: 1px solid #ccc;
-  border-radius: 10px; /* Bordes redondeados */
+  border-radius: 10px; 
   font-size: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra similar a las tarjetas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #003366; /* Color principal */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Más sombra en foco */
+  border-color: #003366; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 textarea {
-  resize: none; /* Evita que el usuario cambie el tamaño del área de texto */
-  height: 100px; /* Altura predeterminada */
+  resize: none; 
+  height: 100px; 
 }
 
 button[type="submit"] {
-  background-color: #003366; /* Color principal */
+  background-color: #003366; 
   color: white;
   padding: 0.8rem 1.5rem;
   border: none;
-  border-radius: 10px; /* Bordes redondeados */
+  border-radius: 10px; 
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
@@ -197,12 +197,12 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #00509e; /* Color más claro al pasar el mouse */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Más sombra */
+  background-color: #00509e; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
   
-  /* Tarjetas */
+
   .cards-container {
     display: flex;
     justify-content: center;
@@ -242,7 +242,7 @@ button[type="submit"]:hover {
     margin: 0;
   }
   
-  /* Responsividad */
+
   @media (max-width: 768px) {
     .cards-container {
       flex-direction: column;

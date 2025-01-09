@@ -30,16 +30,16 @@
   
   <style scoped>
   .modal-overlay {
-    position: fixed; /* Superpone el modal sobre todo el contenido */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    background: rgba(0, 0, 0, 0.5); 
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Asegura que el modal esté en la parte superior */
+    z-index: 1000; 
   }
   
   .modal-content {

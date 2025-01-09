@@ -59,7 +59,7 @@ export default {
 </script>
 
 <style>
-/* Puedes mantener estilos globales aquí */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;

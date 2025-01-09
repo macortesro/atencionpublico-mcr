@@ -23,7 +23,7 @@
 }
 
 .login-btn {
-  position: absolute; /* Permite posicionarlo a la derecha */
+  position: absolute; 
   right: 2rem;
   background-color: white;
   color: #003366;
