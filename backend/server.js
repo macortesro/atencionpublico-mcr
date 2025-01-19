@@ -21,7 +21,11 @@ connectDB();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+
+app.use(cors({
+  origin: 'https://bicrimsbe.netlify.app/',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+}));
 
 // Pasar io al middleware para usarlo en las rutas
 app.use((req, res, next) => {
