@@ -10,12 +10,13 @@ const authRouter = require("./routes/auth");
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
-    cors: {
-        origin: 'https://bicrimsbe.netlify.app', // URL del frontend para S.IO
-        methods: ['GET', 'POST', 'PUT', 'DELETE'],
-        credentials: true,
-    },
+  cors: {
+    origin: "https://bicrimsbe.netlify.app", // URL exacta del cliente
+    methods: ["GET", "POST"],
+    credentials: true,
+  },
 });
+
 
 // Conectar a MongoDB
 connectDB();
