@@ -11,8 +11,9 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: 'http://localhost:5173', // URL del frontend para S.IO
+        origin: 'https://bicrimsbe.netlify.app', // URL del frontend para S.IO
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
+        credentials: true,
     },
 });
 
@@ -23,8 +24,9 @@ connectDB();
 app.use(express.json());
 
 app.use(cors({
-  origin: 'https://bicrimsbe.netlify.app/',
+  origin: 'https://bicrimsbe.netlify.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
 }));
 
 // Pasar io al middleware para usarlo en las rutas
