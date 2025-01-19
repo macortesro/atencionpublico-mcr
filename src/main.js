@@ -4,7 +4,7 @@ import router from './router';
 import "./assets/styles.css";
 import { io } from 'socket.io-client';
 
-const socket = io('http://localhost:5000'); // URL del servidor para IO
+const socket = io('import.meta.env.VITE_API_URL'); // URL del servidor para IO
 
 const app = createApp(App);
 
